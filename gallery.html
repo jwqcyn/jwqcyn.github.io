@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="styles/layout.css" media="screen"/>
+</head>
+<body>
+<h1>Snapshouts</h1>
+<ul>
+<li>
+ <a href="images/1.jpg" title="A cat"
+onclick="showPic(this);return false;">White cat</a>
+</li>
+<li>
+ <a href="images/2.jpg" title="A mouse"
+onclick="showPic(this);return false;">White mouse</a>
+</li>
+<li>
+ <a href="images/3.jpg" title="A pug"
+onclick="showPic(this);return false;">
+Pug</a>
+</li>
+<li>
+ <a href="images/4.jpg" title="A akita"
+onclick="showPic(this);return false;">Akita</a>
+</li>
+</ul>
+<img id="placeholder" src="images/5.jpg" alt="my image gallery"/>
+<p id="description">Choose an image.</p>
+<script src="scripts/showPic.js"></script>
+</body>
+</html>
