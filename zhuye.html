@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>js与主体分离</title>
+<script src="scripts/showPic.js" type="text/javascript"></script>
+</head>
+<body>
+<p><a href="https://jwqcyn.github.io/gallery.html "
+onclick="popUp('https://jwqcyn.github.io/gallery.html');return false;">第一次作业</a></p>
+<p><a href="http://www.example.com/ "
+onclick="popUp(this.getAttribute('herf'));return false;">Example2</a></p>
+<p><a href="http://www.example.com/ "
+onclick="popUp(this.herf);return false;">Example3</a></p>
+<p><a href = "javascript:popUp('http://www.example.com/ ');">Example4</a></p>
+<p><a href= "#" onclick = "popUp('http://www.example.com/ ');
+return false;">Example5</a></p>
+</body>
+</html>
