@@ -11,9 +11,9 @@ function preparelinks(){
    }
  }
 function prepareGallery() {
-if (!document .getElementsByTagName return false;
+if (!document .getElementsByTagName) return false;
 if (!document .getElementById) return false;
-if (!document .getElementById( "imagegallery") return false;
+if (!document .getElementById( "imagegallery")) return false;
 var  gallery =document .getElementById (" imagegallery" );
 var  links = gallery.getElementsByTagName("a" );
 for ( var i=O; i < links.length; i++) {
@@ -24,9 +24,9 @@ return showPic(this)? false: true;
 }
 }
 function showPic(whichpic){
-if (!document ,getElementById("placeholder")) return false;
-var source =whichpic .getAttribute("href )
-var. placeholder " document ,getElementById ("placeholder");
+if (!document .getElementById("placeholder")) return false;
+var source = whichpic .getAttribute("href" );
+var placeholder = document .getElementById ("placeholder");
 if (placeholder ,nodeName != "IMG") return false;
 placeholder .setAttribute("src" ,source);
 if (document.getElementByI("description"))
@@ -34,8 +34,9 @@ var text=whichpic.getAttribute("title")? whichpic.getAttribute("title") :"";
   var description = document .getElementById ("description");
 if (description.firstChild.nodeType ==3) {
   description. firstChild.nodeValue =text;
-}}
-return true;}
+}
+return true;
+}
 
 addLoadEvent(prepareGallery);
 window.onload=preparelinks;
