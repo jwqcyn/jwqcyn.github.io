@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="styles/layout.css" media="screen"/>
+</head>
+<body>
+<h1>Snapshouts</h1>
+<ul id="imagegallery">
+<li>
+ <a href="images/1.jpg" title="Picture1"
+onclick="showPic(this);return false;"><img width="150px" height="80px"src="images/1.jpg"/></a>
+</li>
+<li>
+ <a href="images/2.jpg" title="Picture2"
+onclick="showPic(this);return false;"><img width="150px" height="80px"src="images/2.jpg"/></a>
+</li>
+<li>
+ <a href="images/3.jpg" title="Picture3"
+onclick="showPic(this);return false;"><img width="150px" height="80px"src="images/3.jpg"/></a>
+</li>
+<li>
+ <a href="images/4.jpg" title="Picture4"
+onclick="showPic(this);return false;"><img width="150px" height="80px"src="images/4.jpg"/></a>
+</li>
+</ul>
+<img id="placeholder" src="images/5.jpg" alt="my image gallery"/>
+<p id="description">
+Choose an image.</p>
+<script src="scripts/showPic.js"></script>
+</body>
+</html>
